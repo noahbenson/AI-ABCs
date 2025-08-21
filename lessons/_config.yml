@@ -1,0 +1,27 @@
+# Book settings
+# Learn more at https://jupyterbook.org/customize/config.html
+
+title: The AI ABCs
+author: Noah C. Benson
+#logo: logo.png
+
+# Force re-execution of notebooks on each build.
+execute:
+  execute_notebooks: force
+
+latex:
+  latex_documents:
+    targetname: book.tex
+
+bibtex_bibfiles:
+  - references.bib
+
+repository:
+  url: https://github.com/noahbenson/AI-ABCs
+  path_to_book: lessons/
+  branch: main
+
+# Add GitHub buttons
+html:
+  use_issues_button: true
+  use_repository_button: true
