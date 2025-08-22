@@ -2,30 +2,31 @@
 # Table of contents
 
 format: jb-book
-root: intro
+root: introduction
 parts:
   - caption: Introduction
     chapters:
-      - file: intro/setup
-      - file: intro/prerequisites
+      - file: 0_introduction/1_setup
+      - file: 0_introduction/2_prerequisites
   - caption: Unsupervised Learning
     chapters:
-      - file: unsupervised/knns
-      - file: unsupervised/pca
-      - file: unsupervised/lle
+      - file: 1_unsupervised-learning/0_introduction
+      - file: 1_unsupervised-learning/1_KNNs
+      - file: 1_unsupervised-learning/2_PCA
+      - file: 1_unsupervised-learning/3_LLE
   - caption: Supervised Learning
     chapters:
-      - file: supervised/linear-regression
-      - file: supervised/random-forests
-      - file: supervised/svms
+      - file: 2_supervised-learning/1_linear-regression
+      - file: 2_supervised-learning/2_random-forests
+      - file: 2_supervised-learning/3_svms
   - caption: PyTorch and Optimization
     chapters:
-      - file: pytorch/gradient-descent
-      - file: pytorch/nonlinear-models
-      - file: pytorch/other-tools
+      - file: 3_pytorch/4_gradient-descent
+      - file: 3_pytorch/4_nonlinear-models
+      - file: 3_pytorch/4_other-tools
   - caption: Neural Networks
     chapters:
-      - file: nn/concepts
-      - file: nn/linear-networks
-      - file: nn/cnns
-      - file: nn/prebuilt-models
+      - file: 4_neural-networks/5_concepts
+      - file: 4_neural-networks/5_linear-networks
+      - file: 4_neural-networks/5_CNNs
+      - file: 4_neural-networks/5_prebuilt-models

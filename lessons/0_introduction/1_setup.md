@@ -31,7 +31,7 @@ configurations pre-installed. Installation instructions for Docker can be found
 at [Docker's Getting Started page](https://www.docker.com/get-started/).
 
 
-## Getting Started using `docker run`
+## Starting Jupyter using `docker run`
 
 Once Docker has been installed, all of the material in this course can be run
 using a single publicly-available docker image named
@@ -70,7 +70,7 @@ All of the lessons in this course can be completed using the Jupyter instance
 loaded using these instructions.
 
 
-## Getting Started using `docker compose`
+## Starting Jupyter using `docker compose`
 
 An even easier way to get started with the lessons is to use the `docker
 compose` command along with the `docker-compose.yml` file in this Jupyter

@@ -23,10 +23,10 @@ is a high-level introduction to basic ML and AI tools.
 
 Accordingly, this course is intended for readers who have programming
 experience but who do not necessarilty have strong mathematics and statistics
-backgrounds. (See the [prerequisites](/intro/prerequisites) page for more
-information.) It attempts to provide students with intuition about how various
-ML techniques work, how they can be used, and what their limitations are
-without delving deeply into theory.
+backgrounds. (See the [prerequisites](/0_introduction/2_prerequisites) page for
+more information.) It attempts to provide students with intuition about how
+various ML techniques work, how they can be used, and what their limitations
+are without delving deeply into theory.
 
 
 ## What kind of Artificial Intelligence does this course cover?
