@@ -27,11 +27,21 @@ html:
     <div>
       <table cellpadding="0" cellspacing="0" border="0" width="100%">
         <tr>
-          <td>
+          <td width="50%">
             <p>Copyright &copy; 2025 Noah C. Benson</p></td>
-          <td style="text-align: right;">
-            <p>Contents licensed under <a href="https://creativecommons.org/licenses/by/4.0/legalcode">CC-BY
-          4.0</a> by the authors</p></td></tr></table></div>
+          <td width="50%" style="text-align: right;">
+            <p width="100%" style="text-align: right;">
+               Content licensed under
+               <a href="https://creativecommons.org/licenses/by/4.0/legalcode">
+               CC-BY 4.0</a></p></td></tr>
+        <tr>
+          <td colspan="2" style="text-align: center;">
+            <a href="https://escience.washington.edu/">
+              <img src="_static/eScience-logo.svg"
+                   alt="eScience Institute Logo"
+                   width="200px">
+                </img></a></td></tr></table></div>
 sphinx:
   config:
     html_show_copyright: false
+    language: en
