@@ -45,9 +45,9 @@ privacy, or moral rights may limit how you use the material.
 
 ## Software
 
-Except where otherwise noted, the example programs and any other
-software provided in this repository are made available under the [MIT
-license](https://opensource.org/licenses/mit-license.html).
+Except where otherwise noted, the example programs, scripts, documentation and
+any other software components provided in this repository are made available
+under the [MIT license](https://opensource.org/licenses/mit-license.html).
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in

@@ -3,7 +3,8 @@
 
 title: The AI ABCs
 author: Noah C. Benson
-#logo: logo.png
+copyright: "2025"
+logo: logo.svg
 
 # Force re-execution of notebooks on each build.
 execute:
@@ -13,15 +14,24 @@ latex:
   latex_documents:
     targetname: book.tex
 
-bibtex_bibfiles:
-  - references.bib
-
 repository:
   url: https://github.com/noahbenson/AI-ABCs
   path_to_book: lessons/
   branch: main
 
-# Add GitHub buttons
+# Add GitHub buttons and extra footer information.
 html:
   use_issues_button: true
   use_repository_button: true
+  extra_footer: |
+    <div>
+      <table cellpadding="0" cellspacing="0" border="0" width="100%">
+        <tr>
+          <td>
+            <p>Copyright &copy; 2025 Noah C. Benson</p></td>
+          <td style="text-align: right;">
+            <p>Contents licensed under <a href="https://creativecommons.org/licenses/by/4.0/legalcode">CC-BY
+          4.0</a> by the authors</p></td></tr></table></div>
+sphinx:
+  config:
+    html_show_copyright: false
