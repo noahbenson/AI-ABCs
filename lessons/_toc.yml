@@ -12,8 +12,8 @@ parts:
     chapters:
       - file: 1_unsupervised-learning/0_introduction
       - file: 1_unsupervised-learning/1_kmeans
-      - file: 1_unsupervised-learning/2_PCA
-      - file: 1_unsupervised-learning/3_LLE
+      - file: 1_unsupervised-learning/2_pca
+      - file: 1_unsupervised-learning/3_lle
   - caption: Supervised Learning
     chapters:
       - file: 2_supervised-learning/1_linear-regression
