@@ -11,7 +11,7 @@ parts:
   - caption: Unsupervised Learning
     chapters:
       - file: 1_unsupervised-learning/0_introduction
-      - file: 1_unsupervised-learning/1_KNNs
+      - file: 1_unsupervised-learning/1_kmeans
       - file: 1_unsupervised-learning/2_PCA
       - file: 1_unsupervised-learning/3_LLE
   - caption: Supervised Learning
