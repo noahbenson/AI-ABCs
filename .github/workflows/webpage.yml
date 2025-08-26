@@ -1,0 +1,50 @@
+################################################################################
+# webpage.yml
+#
+# GitHub Actions Workflow for building and publishing the AI ABCs website.
+# This is largely a modified version of the template given by the Jupyter book
+# project, here: https://jupyterbook.org/en/stable/publish/gh-pages.html
+#
+# by Noah C. Benson
+
+name: Build and Deploy Website
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - lessons/**
+  workflow_dispatch:
+    
+jobs:
+  deploy-docs:
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment: github-pages
+    steps:
+      - uses: actions/checkout@v4
+      # Install dependencies
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip # Implicitly uses requirements.txt for cache key
+      - name: Install all relevant libraries
+        run: pip install -r requirements.txt
+      # Build the book
+      - name: Build Documentation
+        run: |
+          mkdir -p site
+          jupyter-book build --path-output site lessons
+      # Upload the book's HTML as an artifact
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: "site/_build/html"
+      # Deploy the book's HTML to GitHub Pages
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
