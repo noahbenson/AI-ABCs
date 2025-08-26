@@ -18,7 +18,8 @@ on:
   workflow_dispatch:
     
 jobs:
-  deploy-docs:
+  deploy-website:
+    name: Build and Deploy Website
     runs-on: ubuntu-latest
     permissions:
       pages: write
