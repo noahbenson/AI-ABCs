@@ -2,8 +2,10 @@
 # This lesson works on the pytorch notebook of the Jupyter Stacks.
 FROM quay.io/jupyter/pytorch-notebook:python-3.12
 
-# We want to make sure that jupyter book is installed.
-RUN pip install jupyter-book
+# We want to make sure that our requirements file is satisfied!
+COPY requirements.txt requirements.txt
+RUN pip install -r requirements.txt
+RUN rm requirements.txt
 
 # We want to copy the lesson notebooks over so that (1) the lessons directory
 # in the Jupyter Lab interface isn't full of the website config files and (2)
