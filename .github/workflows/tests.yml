@@ -1,20 +1,29 @@
 ###############################################################################
-# webpage.yml
+# tests.yml
 #
-# GitHub Actions Workflow for building and publishing the AI ABCs website.
+# GitHub Actions Workflow for testing the build process for the AI ABCs
+# website.
 # This is largely a modified version of the template given by the Jupyter book
-# project, here: https://jupyterbook.org/en/stable/publish/gh-pages.html
+# project, here:
+# https://jupyterbook.org/en/stable/publish/gh-pages.html
 #
 # by Noah C. Benson
 
-name: Build and Deploy Website
+name: Test Website Build
 
 on:
+  push:
+    branches:
+      - main
+    paths:
+      - lessons/**
+      - requirements.txt
+      - .github/workflows/tests.yml
   workflow_dispatch:
     
 jobs:
-  deploy-website:
-    name: Build and Deploy Website
+  test-website:
+    name: Test Website Build
     runs-on: ubuntu-latest
     permissions:
       pages: write
@@ -30,17 +39,8 @@ jobs:
           cache: pip # Implicitly uses requirements.txt for cache key
       - name: Install all relevant libraries
         run: pip install -r requirements.txt
-      # Build the book
+      # Test things (i.e., build the book)
       - name: Build Website
         run: |
           mkdir -p site
           jupyter-book build --path-output site lessons
-      # Upload the book's HTML as an artifact
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: "site/_build/html"
-      # Deploy the book's HTML to GitHub Pages
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
