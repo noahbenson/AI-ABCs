@@ -13,20 +13,22 @@ parts:
       - file: 1_unsupervised-learning/0_introduction
       - file: 1_unsupervised-learning/1_kmeans
       - file: 1_unsupervised-learning/2_pca
-      - file: 1_unsupervised-learning/3_lle
+      - file: 1_unsupervised-learning/3_limitations
   - caption: Supervised Learning
     chapters:
+      - file: 2_supervised-learning/0_introduction
       - file: 2_supervised-learning/1_linear-regression
       - file: 2_supervised-learning/2_random-forests
       - file: 2_supervised-learning/3_svms
   - caption: PyTorch and Optimization
     chapters:
-      - file: 3_pytorch/4_gradient-descent
-      - file: 3_pytorch/4_nonlinear-models
-      - file: 3_pytorch/4_other-tools
+      - file: 3_pytorch/0_introduction
+      - file: 3_pytorch/1_gradient-descent
+      - file: 3_pytorch/2_nonlinear-models
+      - file: 3_pytorch/3_other-tools
   - caption: Neural Networks
     chapters:
-      - file: 4_neural-networks/5_concepts
-      - file: 4_neural-networks/5_linear-networks
-      - file: 4_neural-networks/5_CNNs
-      - file: 4_neural-networks/5_prebuilt-models
+      - file: 4_neural-networks/0_introduction
+      - file: 4_neural-networks/1_linear-networks
+      - file: 4_neural-networks/2_CNNs
+      - file: 4_neural-networks/3_prebuilt-models
