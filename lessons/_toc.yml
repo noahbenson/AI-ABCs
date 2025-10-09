@@ -31,4 +31,4 @@ parts:
       - file: 4_neural-networks/0_introduction
       - file: 4_neural-networks/1_linear-networks
       - file: 4_neural-networks/2_CNNs
-      - file: 4_neural-networks/3_prebuilt-models
+      - file: 4_neural-networks/3_prebuilt
