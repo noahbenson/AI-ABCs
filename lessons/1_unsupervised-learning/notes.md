@@ -1,5 +1,6 @@
-# Notes about Lesson 1
+:orphan:
 
+# Notes about Lesson 1
 
 ## Moth Data
 
