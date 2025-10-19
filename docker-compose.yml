@@ -2,7 +2,7 @@ services:
   ai_abcs:
     build: .
     ports:
-      - "8888:8888"
+      - "${AIABCS_PORT:-8888}:8888"
     volumes:
       - "$PWD:/home/jovyan/repo"
 
