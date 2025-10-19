@@ -29,6 +29,6 @@ parts:
   - caption: Neural Networks
     chapters:
       - file: 4_neural-networks/0_introduction
-      - file: 4_neural-networks/1_linear-networks
+      - file: 4_neural-networks/1_feedforward-networks
       - file: 4_neural-networks/2_CNNs
       - file: 4_neural-networks/3_prebuilt
