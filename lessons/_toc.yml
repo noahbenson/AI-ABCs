@@ -32,6 +32,3 @@ parts:
       - file: 4_neural-networks/1_linear-networks
       - file: 4_neural-networks/2_CNNs
       - file: 4_neural-networks/3_prebuilt
-  - hidden: true
-    chapters:
-      - file: 1_unsupervised-learning/notes
