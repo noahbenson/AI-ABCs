@@ -4,7 +4,7 @@
 title: The AI ABCs
 author: Noah C. Benson
 copyright: "2025"
-logo: _static/images/logo.svg
+logo: "_static/images/logo.svg"
 
 # Force re-execution of notebooks on each build.
 execute:
