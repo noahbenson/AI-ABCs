@@ -4,7 +4,7 @@
 title: The AI ABCs
 author: Noah C. Benson
 copyright: "2025"
-logo: logo.svg
+logo: _static/images/logo.svg
 
 # Force re-execution of notebooks on each build.
 execute:
@@ -37,7 +37,7 @@ html:
         <tr>
           <td colspan="2" style="text-align: center;">
             <a href="https://escience.washington.edu/">
-              <img src="../_static/eScience-logo.svg"
+              <img src="../_static/images/eScience-logo.svg"
                    alt="eScience Institute Logo"
                    width="200px">
                 </img></a></td></tr></table></div>
