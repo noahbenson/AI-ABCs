@@ -9,6 +9,7 @@ logo: "_static/images/logo.svg"
 # Force re-execution of notebooks on each build.
 execute:
   execute_notebooks: force
+  timeout: 180
 
 latex:
   latex_documents:
