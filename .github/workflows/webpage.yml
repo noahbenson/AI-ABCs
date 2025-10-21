@@ -28,8 +28,11 @@ jobs:
         with:
           python-version: '3.12'
           cache: pip # Implicitly uses requirements.txt for cache key
-      - name: Install all relevant libraries
+      - name: Install libraries in requirements.txt
         run: pip install -r requirements.txt
+      - name: Install PyTorch
+        run: |
+          pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
       # Build the book
       - name: Build Website
         run: |
