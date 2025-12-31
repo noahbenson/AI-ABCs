@@ -18,7 +18,7 @@ This Jupyter book is a high-level introduction to using machine learning (ML)
 and artificial intelligence (AI) methods in scientific research. Its design has
 been heavily inspired by [Software Carpentry](https://software-carpentry.org/),
 a program run by [the Carpentries](https://carpentries.org/). Whereas Software
-Cerpentry is a high-level introduction to basic programming tools, this course
+Carpentry is a high-level introduction to basic programming tools, this course
 is a high-level introduction to basic ML and AI tools.
 
 Accordingly, this course is intended for readers who have programming
