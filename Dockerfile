@@ -15,3 +15,6 @@ COPY lessons/1_unsupervised-learning/ /home/jovyan/lessons/1_unsupervised-learni
 COPY lessons/2_supervised-learning/ /home/jovyan/lessons/2_supervised-learning/
 COPY lessons/3_pytorch/ /home/jovyan/lessons/3_pytorch/
 COPY lessons/4_neural-networks/ /home/jovyan/lessons/4_neural-networks/
+
+# Fix the permissions
+RUN fix-permissions "/home/${NB_USER}"
