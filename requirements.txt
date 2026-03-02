@@ -8,4 +8,5 @@ scikit-image>=0.25.2
 scikit-learn>=1.7.1
 scipy>=1.16.0
 jupyterlab-spellchecker
+jupyterlab-a11y-checker
 ipympl

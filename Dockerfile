@@ -17,4 +17,8 @@ COPY lessons/3_pytorch/ /home/jovyan/lessons/3_pytorch/
 COPY lessons/4_neural-networks/ /home/jovyan/lessons/4_neural-networks/
 
 # Fix the permissions
+USER root
 RUN fix-permissions "/home/${NB_USER}"
+
+# For the jupyterlab-a11y-checker, we need nodejs installed by conda.
+RUN conda install 'nodejs>=20'

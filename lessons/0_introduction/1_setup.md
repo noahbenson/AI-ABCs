@@ -69,6 +69,33 @@ embedded in the Docker container.
 All of the lessons in this course can be completed using the Jupyter instance
 loaded using these instructions.
 
+:::{admonition} Accessibility Note (Screen Readers)
+:class: note
+
+The program started by the commands above is called "Jupyter", and there are
+multiple software interfaces for it. The repository by default uses an
+interface called "jupyter lab", which embeds a file-browser panel with
+workspace panel of open notebooks that are selected using tabs, all within a
+single browser window. This interface is, as of the date that this website was
+written, generally considered less accessible than the alternative interface
+called "jupyter notebook". The notebook interface initially creates a browser
+tab containing a file browser with a button that allows the user to create a
+new notebook file or command-line session; rather than contain notebooks within
+a single browser tab, this interface opens new browser tabs whenever content is
+opened.
+
+To use the notebook mode with the AI ABCs, you just need to run the following
+command before you run the `docker run` command above or the `docker compose`
+command below:
+
+```bash
+export AIABCS_MODE=notebook
+```
+
+If you are using a screen reader and find that the jupyter lab interface is
+cumbersome, we suggest trying the notebook mode.
+:::
+
 
 ## Starting Jupyter using `docker compose`
 

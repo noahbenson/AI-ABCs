@@ -2,7 +2,9 @@ services:
   ai_abcs:
     build: .
     ports:
-      - "${AIABCS_PORT:-8888}:8888"
+      - "${AIABCS_PORT:-8888}:${AIABCS_PORT:-8888}"
+    environment:
+      JUPYTER_PORT: "${AIABCS_PORT:-8888}"
+      DOCKER_STACKS_JUPYTER_CMD: "${AIABCS_MODE:-lab}"
     volumes:
-      - "$PWD:/home/jovyan/repo"
-
+      - "${PWD}:/home/jovyan/repo"
