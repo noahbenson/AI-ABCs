@@ -1,6 +1,7 @@
 services:
   ai_abcs:
-    build: .
+    #build: .
+    image: nben/aiabcs:2026-03-02
     ports:
       - "${AIABCS_PORT:-8888}:${AIABCS_PORT:-8888}"
     environment:
