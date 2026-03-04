@@ -14,12 +14,12 @@ import pandas as pd
 
 # How much data did we collect for this subject?
 n_contrasts = 25
-n_meas = 8  # (8 independent measurements per unique contrast)
+n_meas = 40  # (40 independent measurements per unique contrast)
 
 # What are the actual parameters of our model?
 # probability(c; a, c0) = sigmoid(a*(c - c0))
 def prob(c, a, c0):
-    return 1 / (1 + np.exp(-a * (c - c0)))
+    return 0.5*(1 + 1 / (1 + np.exp(-a * (c - c0))))
 a = 0.12
 c0 = 42
 
