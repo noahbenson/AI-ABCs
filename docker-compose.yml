@@ -1,11 +1,15 @@
 services:
   ai_abcs:
-    #build: .
-    image: nben/aiabcs:2026-03-02
+    image: nben/aiabcs:2026-11-16
+    build:
+      context: .
+      dockerfile: Dockerfile
     ports:
       - "${AIABCS_PORT:-8888}:${AIABCS_PORT:-8888}"
     environment:
       JUPYTER_PORT: "${AIABCS_PORT:-8888}"
       DOCKER_STACKS_JUPYTER_CMD: "${AIABCS_MODE:-lab}"
+      AIABCS_PORT: "${AIABCS_PORT:-8888}"
     volumes:
       - "${PWD}:/home/jovyan/repo"
+    command: ["start-notebook.py", "--port=${AIABCS_PORT:-8888}", "--custom-css"]

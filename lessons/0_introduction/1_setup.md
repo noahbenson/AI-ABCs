@@ -40,7 +40,9 @@ contains all of the tools above, including a ready installation of Jupyter. We
 can start the Jupyter instance using the following command in a terminal:
 
 ```bash
-docker run --rm -it -p8888:8888 quay.io/jupyter/pytorch-notebook:python-3.12
+docker run --rm -it -p8888:8888 \
+       -v "${PWD}:/home/jovyan/repo" \
+       quay.io/jupyter/pytorch-notebook:python-3.12
 ```
 
 The first time you run this command, it will likely need to pull (download) the

@@ -1,0 +1,26 @@
+/* Add an introductory message above the launcher. */
+.jp-Launcher-content::before {
+    content:
+        "Welcome to the AI ABCs Jupyter Lab server!"
+        "\A\A"
+        "This server runs inside of a Docker container (virtual machine) "
+        "to simplify installation and setup. Work saved outside the "
+        "repo/ directory will not persist between sessions."
+        "\A\A"
+        "The repo/ directory is the same directory from which you ran "
+        "docker compose up. Any work saved there will be preserved."
+        "\A\A"
+        "The lessons/ directory contains original copies of the lesson "
+        "notebooks and is not saved between Docker sessions."
+        "\A\A"
+        "Use the launch options below to get started.";
+    white-space: pre-wrap;
+    display: block;
+    padding: 24px;
+    margin: 16px;
+    border-radius: 8px;
+    background: var(--jp-layout-color2);
+    color: var(--jp-ui-font-color1);
+    font-size: 14px;
+    line-height: 1.6;
+}
